@@ -16,7 +16,7 @@ export function Section({
 
         <section
             className={cn(
-                "py-24",
+                "w-full py-24",
                 className
             )}
         >
