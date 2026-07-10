@@ -3,6 +3,7 @@ import { cn } from "@/shared/lib/cn";
 
 interface ButtonProps
     extends ButtonHTMLAttributes<HTMLButtonElement> {
+        variant?: "default" | "outline" | "ghost";
 }
 
 export function Button({
