@@ -1,5 +1,5 @@
 import ProfileCard from "@/entities/profile/ui/ProfileCard";
-import { heroProfile } from "../model/data";
+import { heroProfile } from "@/entities/profile/model/data";
 
 export function Hero() {
     return (
