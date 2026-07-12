@@ -14,17 +14,9 @@ export interface Project {
 
     techStack: string[];
 
-    // responsibilities: string[];
-
     achievements: string[];
 
     cases: ProjectCase[];
-
-    // problem: string[];
-
-    // solution: string[];
-
-    // learned: string[];
 
     github?: string;
 

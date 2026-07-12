@@ -104,30 +104,32 @@ export default function ProjectDetail({
             </section>
 
             {/* Problem Cases */}
+            {
+                project.cases.length > 0 &&
+                <section className="mt-20">
 
-            <section className="mt-20">
+                    <h2 className="text-3xl font-bold">
+                        Problem Cases
+                    </h2>
 
-                <h2 className="text-3xl font-bold">
-                    Problem Cases
-                </h2>
+                    <div className="mt-8 space-y-8">
 
-                <div className="mt-8 space-y-8">
+                        {project.cases.map((item) => (
 
-                    {project.cases.map((item) => (
+                            <ProjectCaseCard
+                                key={item.title}
+                                title={item.title}
+                                problem={item.problem}
+                                solution={item.solution}
+                                results={item.results}
+                            />
 
-                        <ProjectCaseCard
-                            key={item.title}
-                            title={item.title}
-                            problem={item.problem}
-                            solution={item.solution}
-                            results={item.results}
-                        />
+                        ))}
 
-                    ))}
+                    </div>
 
-                </div>
-
-            </section>
+                </section>
+            }
 
             {/* Tech */}
 
@@ -168,10 +170,12 @@ export default function ProjectDetail({
 
             </section>
 
-            <h2 className="mt-20 text-3xl font-bold">
-                Project Images
-            </h2>
-
+            {
+                project.images &&
+                <h2 className="mt-20 text-3xl font-bold">
+                    Project Images
+                </h2>
+            }
             {
                 project.images && 
                 <ImageGallery

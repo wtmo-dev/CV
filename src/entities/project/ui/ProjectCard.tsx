@@ -20,6 +20,7 @@ export default function ProjectCard({
                 border-zinc-200
 
                 p-6
+                mb-4
 
                 transition
                 hover:bg-zinc-50
